@@ -1,2 +1,2 @@
   
-web: gunicorn xmeme.wsgi
+web: gunicorn backend.wsgi
