@@ -9,9 +9,10 @@ from .models import *
 @api_view(['GET'])
 def apiOverview(request):
     api_urls={
-        'List':'/task-list/',
-        'Detail View':'/task-detail/<str:pk>',
-        'Create':'/Create-list/',
+        'Meme List':'https://crio-xmeme.herokuapp.com/api/memes/',
+        'Single Meme':'https://crio-xmeme.herokuapp.com/api/meme-detail/<str:pk>',
+        'Meme Post':'https://crio-xmeme.herokuapp.com/api/meme-create/',
+        'Meme Post Delete' :'https://crio-xmeme.herokuapp.com/api/meme-delete/<str:pk>',
     }
     return Response(api_urls)
 
