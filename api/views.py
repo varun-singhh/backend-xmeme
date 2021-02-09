@@ -10,7 +10,7 @@ from .models import *
 def apiOverview(request):
     api_urls={
         'Meme List':'https://crio-xmeme.herokuapp.com/api/memes/',
-        'Single Meme':'https://crio-xmeme.herokuapp.com/api/memes-detail/<str:pk>',
+        'Single Meme':'https://crio-xmeme.herokuapp.com/api/memes/<str:pk>',
         'Meme Post':'https://crio-xmeme.herokuapp.com/api/memes-create/',
         'Meme Post Delete' :'https://crio-xmeme.herokuapp.com/api/memes-delete/<str:pk>',
     }
