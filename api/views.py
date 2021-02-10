@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import TaskSerializer
 from .models import *
+from django.http import Http404
 
 # Create your views here.
 @api_view(['GET'])
@@ -24,9 +25,12 @@ def taskList(request):
 
 @api_view(['GET'])
 def taskDetail(request,pk):
-    tasks=Task.objects.get(id=pk)
-    serializer=TaskSerializer(tasks,many=False)
-    return Response(serializer.data)
+    try:
+        tasks = Task.objects.get(id=pk)
+        serializer = TaskSerializer(tasks, many=False)
+        return Response(serializer.data)
+    except Task.DoesNotExist:
+        raise Http404("User does not exist")
 
 @api_view(['POST'])
 def taskCreate(request):
