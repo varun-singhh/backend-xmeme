@@ -7,7 +7,6 @@ This Project consist of two Parts:
 ## Xmeme Frontend
 
 Fontend Part of App is made with React and is being deployed to netlify, it has features of adding post, deleting post and edit the same.  
-Link to Frontend: <a href="https://crio-xmeme.netlify.app/">Xmeme-Frontend</a>
 
 
 ## Xmeme Backend
