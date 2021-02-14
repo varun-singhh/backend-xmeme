@@ -1,4 +1,4 @@
-# Xmeme- Post Memes/Images and Chat
+# Xmeme- Post Memes and Chat
 
 This Project consist of two Parts:
 - Xmeme Backend  
