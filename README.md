@@ -27,7 +27,10 @@ Finaly Deploy in Production Mode: `netlify deploy --prod`
 
 ### Backend Dependencies
 
-`pip django djangorestframework django-cors-headers`
+`pip install django djangorestframework django-cors-headers django_heroku`
+```(In setting.py)
+Change: DEBUG = True
+```
 
 ### Running the frontend and deploying to netlify
 
