@@ -47,4 +47,4 @@ Deploy on Heroku by connecting with Github.
 
 
 ✅Make sure net connection is good to avoid buffering while running the app.  
-✅Feel Free to add more Features to this todo, Just Raise an Issue and then create a pull request to get your pull request merged. if you like this don't forget to ⭐(star) or (frok) this repository.
+✅Feel Free to add more Features to this todo, Just Raise an Issue and then create a pull request to get your pull request merged. if you like this don't forget to ⭐(star)
